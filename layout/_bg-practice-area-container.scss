@@ -1,0 +1,1071 @@
+.bg-practice-area-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  transform: translateY(5%);
+
+  .text-only-conteiner {
+    width: 50%;
+    margin: auto;
+
+    .mob-only {
+      display: none;
+    }
+
+    h2 {
+      margin-left: 2rem;
+      font-size: 3rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: $logocolor;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $logocolor;
+        width: 15rem;
+        height: 0.3rem;
+      }
+    }
+    p {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 2rem;
+      columns: 2;
+      gap: 5rem;
+      text-align: justify;
+    }
+  }
+  .practic-area {
+    width: 50%;
+    margin: auto;
+    transform: translateY(15%);
+    h3 {
+      color: $logocolor;
+      margin-left: 2rem;
+      font-size: 3rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $logocolor;
+        width: 24.5rem;
+        height: 0.3rem;
+      }
+    }
+
+    .text-icon-container {
+      .arrow {
+        width: 0.8rem;
+        display: none;
+      }
+
+      .row1 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 5.5rem;
+        margin-bottom: 3rem;
+
+        .iconic-text {
+          display: flex;
+          flex-direction: column;
+
+          .icon {
+            display: flex;
+            img {
+              // background-color: red;
+              margin-right: 1rem;
+              width: 3rem;
+            }
+            h2 {
+              font-size: 2.5rem;
+              color: $logocolor;
+            }
+          }
+
+          p {
+            // width: 50%;
+            text-align: justify;
+            font-size: 2rem;
+          }
+        }
+      }
+      .row2 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 5.5rem;
+        margin-bottom: 3rem;
+        .iconic-text {
+          display: flex;
+          flex-direction: column;
+
+          .icon {
+            display: flex;
+            img {
+              // background-color: red;
+              margin-right: 1rem;
+              width: 3rem;
+            }
+            h2 {
+              font-size: 2.5rem;
+              color: $logocolor;
+            }
+          }
+
+          p {
+            // width: 50%;
+            text-align: justify;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 320px) {
+  .bg-practice-area-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    transform: translateY(0vh);
+
+    .text-only-conteiner {
+      transform: translateY(10%);
+      width: 92%;
+      margin: auto;
+      // background-color: red;
+
+      .mob-only {
+        color: $navcolor;
+        width: 87%;
+        margin: auto;
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+        background-color: $logocolor;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1.3rem 3.5rem;
+      }
+
+      h2 {
+        margin-left: unset;
+        font-size: 2.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: $logocolor;
+        text-align: center;
+
+        &::after {
+          content: "";
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 30%;
+          height: 0.3rem;
+        }
+      }
+      p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        columns: 1;
+        gap: 5rem;
+        text-align: justify;
+        span {
+          display: none;
+        }
+      }
+    }
+    .practic-area {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      transform: translateY(30%);
+      h3 {
+        text-align: center;
+        color: $logocolor;
+        margin-left: unset;
+        font-size: 2.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 60%;
+          height: 0.3rem;
+        }
+      }
+
+      .text-icon-container {
+        margin-top: 2rem;
+        .arrow {
+          width: 90%;
+          margin: auto;
+          display: flex;
+
+          img {
+            width: 1rem;
+            position: absolute;
+            top: 55%;
+          }
+          .icon-a {
+            left: 0;
+          }
+          .icon-b {
+            right: 0;
+          }
+        }
+
+        .row1 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          gap: 5.5rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+
+          .iconic-text {
+            width: 90%;
+            margin: auto;
+            background-color: $navcolor;
+            padding: 1rem;
+            &:nth-child(1) {
+              display: none;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            // background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 15%;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .row2 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          gap: 5.5rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+          &:nth-of-type(1) {
+            display: none;
+          }
+          &:nth-of-type(2) {
+            display: none;
+          }
+          &:nth-of-type(3) {
+            display: none;
+          }
+          .iconic-text {
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 3rem;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .bg-practice-area-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    transform: translateY(0vh);
+
+    .text-only-conteiner {
+      transform: translateY(10%);
+      width: 80%;
+      margin: auto;
+
+      // background-color: red;
+
+      .mob-only {
+        color: $navcolor;
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+        background-color: $logocolor;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1.3rem 3.5rem;
+      }
+
+      h2 {
+        margin-left: unset;
+        font-size: 3.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: $logocolor;
+        text-align: center;
+
+        &::after {
+          content: "";
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 30%;
+          height: 0.3rem;
+        }
+      }
+      p {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        font-size: 1.5rem;
+        columns: 1;
+        gap: 5rem;
+        text-align: justify;
+        span {
+          display: none;
+        }
+      }
+    }
+    .practic-area {
+      width: 87%;
+      margin: auto;
+      text-align: center;
+      transform: translateY(30%);
+      h3 {
+        text-align: center;
+        color: $logocolor;
+        margin-left: unset;
+        font-size: 3.4rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 60%;
+          height: 0.3rem;
+        }
+      }
+
+      .text-icon-container {
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+        .arrow {
+          width: 90%;
+          margin: auto;
+          display: flex;
+
+          img {
+            width: 1rem;
+            position: absolute;
+            top: 55%;
+          }
+          .icon-a {
+            left: 0;
+          }
+          .icon-b {
+            right: 0;
+          }
+        }
+
+        .row1 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          gap: 5.5rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+
+          .iconic-text {
+            width: 90%;
+            margin: auto;
+            background-color: $navcolor;
+            padding: 1rem;
+            &:nth-child(1) {
+              display: none;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            // background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 15%;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .row2 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          gap: 5.5rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+          &:nth-of-type(1) {
+            display: none;
+          }
+          &:nth-of-type(2) {
+            display: none;
+          }
+          &:nth-of-type(3) {
+            display: none;
+          }
+          .iconic-text {
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 3rem;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .bg-practice-area-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    transform: translateY(0vh);
+
+    .text-only-conteiner {
+      transform: translateY(10%);
+      width: 60%;
+      margin: auto;
+
+      // background-color: red;
+
+      .mob-only {
+        color: $navcolor;
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+        background-color: $logocolor;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1.3rem 3.5rem;
+      }
+
+      h2 {
+        margin-left: unset;
+        font-size: 3.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: $logocolor;
+        text-align: center;
+
+        &::after {
+          content: "";
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 30%;
+          height: 0.3rem;
+        }
+      }
+      p {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        font-size: 1.5rem;
+        columns: 1;
+        gap: 5rem;
+        text-align: justify;
+        span {
+          display: none;
+        }
+      }
+    }
+    .practic-area {
+      width: 72%;
+      margin: auto;
+      text-align: center;
+      transform: translateY(30%);
+      h3 {
+        text-align: center;
+        color: $logocolor;
+        margin-left: unset;
+        font-size: 3.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 50%;
+          height: 0.3rem;
+        }
+      }
+
+      .text-icon-container {
+        width: 100%;
+        margin-top: 2rem;
+        .arrow {
+          width: 90%;
+          margin: auto;
+          display: flex;
+
+          img {
+            width: 1rem;
+            position: absolute;
+            top: 55%;
+          }
+          .icon-a {
+            left: 0;
+          }
+          .icon-b {
+            right: 0;
+          }
+        }
+
+        .row1 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          gap: 5.5rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+
+          .iconic-text {
+            width: 90%;
+            margin: auto;
+            background-color: $navcolor;
+            padding: 1rem;
+            &:nth-child(1) {
+              display: none;
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            // background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 15%;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .row2 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          gap: 5.5rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+          &:nth-of-type(1) {
+            display: none;
+          }
+          &:nth-of-type(2) {
+            display: none;
+          }
+          &:nth-of-type(3) {
+            display: none;
+          }
+          .iconic-text {
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 3rem;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .bg-practice-area-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    transform: translateY(8vh);
+
+    .text-only-conteiner {
+      transform: translateY(0%);
+      width: 75%;
+      margin: auto;
+
+      // background-color: red;
+
+      .mob-only {
+        color: $navcolor;
+        width: 100%;
+        margin: auto;
+        display: none;
+        text-decoration: none;
+        font-size: 2rem;
+        background-color: $logocolor;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1.3rem 3.5rem;
+      }
+
+      h2 {
+        margin-left: unset;
+        font-size: 3.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: $logocolor;
+        text-align: start;
+
+        &::after {
+          content: "";
+          content: "";
+          position: absolute;
+          left: 0%;
+          transform: translateX(0%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 18rem;
+          height: 0.3rem;
+        }
+      }
+      p {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        font-size: 1.5rem;
+        columns: 2;
+        gap: 5rem;
+        text-align: justify;
+        span {
+          display: block;
+        }
+      }
+    }
+    .practic-area {
+      width: 79%;
+      margin: auto;
+      text-align: center;
+      transform: translateY(15%);
+      h3 {
+        text-align: start;
+        color: $logocolor;
+        margin-left: 2rem;
+        font-size: 3rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0%;
+          transform: translateX(0%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 25rem;
+          height: 0.3rem;
+        }
+      }
+
+      .text-icon-container {
+        width: 100%;
+        margin-top: 2rem;
+        .arrow {
+          width: 90%;
+          margin: auto;
+          display: none;
+
+          img {
+            width: 1rem;
+            position: absolute;
+            top: 5rem;
+          }
+          .icon-a {
+            left: 0;
+          }
+          .icon-b {
+            right: 0;
+          }
+        }
+
+        .row1,
+        .row2 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          gap: 3rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+
+          .iconic-text {
+            width: 90%;
+            margin: auto;
+            background-color: $navcolor;
+            padding: 1rem;
+            &:nth-child(1) {
+              display: block;
+            }
+            &:nth-child(2) {
+              display: block;
+            }
+            // background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 15%;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .bg-practice-area-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    transform: translateY(8vh);
+
+    .text-only-conteiner {
+      transform: translateY(0%);
+      width: 60%;
+      margin: auto;
+
+      // background-color: red;
+
+      .mob-only {
+        color: $navcolor;
+        width: 100%;
+        margin: auto;
+        display: none;
+        text-decoration: none;
+        font-size: 2rem;
+        background-color: $logocolor;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1.3rem 3.5rem;
+      }
+
+      h2 {
+        margin-left: unset;
+        font-size: 3.5rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        color: $logocolor;
+        text-align: start;
+
+        &::after {
+          content: "";
+          content: "";
+          position: absolute;
+          left: 0%;
+          transform: translateX(0%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 18rem;
+          height: 0.3rem;
+        }
+      }
+      p {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        font-size: 1.7rem;
+        columns: 2;
+        gap: 5rem;
+        text-align: justify;
+        span {
+          display: block;
+        }
+      }
+    }
+    .practic-area {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+      transform: translateY(15%);
+      h3 {
+        text-align: start;
+        color: $logocolor;
+        margin-left: 0rem;
+        font-size: 3rem;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0%;
+          transform: translateX(0%);
+          bottom: 0;
+          background-color: $logocolor;
+          width: 25rem;
+          height: 0.3rem;
+        }
+      }
+
+      .text-icon-container {
+        width: 100%;
+        margin-top: 2rem;
+        .arrow {
+          width: 90%;
+          margin: auto;
+          display: none;
+
+          img {
+            width: 1rem;
+            position: absolute;
+            top: 5rem;
+          }
+          .icon-a {
+            left: 0;
+          }
+          .icon-b {
+            right: 0;
+          }
+        }
+
+        .row1,
+        .row2 {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          gap: 3rem;
+          margin-bottom: 3rem;
+          // background-color: pink;
+
+          .iconic-text {
+            width: 90%;
+            margin: auto;
+            background-color: $navcolor;
+            padding: 1rem;
+            &:nth-child(1) {
+              display: block;
+            }
+            &:nth-child(2) {
+              display: block;
+            }
+            // background-color: green;
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              img {
+                // background-color: red;
+                margin-right: 1rem;
+                width: 15%;
+              }
+              h2 {
+                font-size: 2rem;
+                color: $logocolor;
+              }
+            }
+
+            p {
+              // width: 50%;
+              text-align: justify;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 3000px) {
+}
